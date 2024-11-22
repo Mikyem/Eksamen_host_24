@@ -3,145 +3,222 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="wth=device-wth, initial-scale=1.0">
-    <link href="ikoner/css/fontawesome.css" rel="stylesheet"/>
-    <link href="ikoner/css/brands.css" rel="stylesheet"/>
-    <link href="ikoner/css/solid.css" rel="stylesheet"/>
+    <link href="ikoner/css/fontawesome.css" rel="stylesheet">
+    <link href="ikoner/css/brands.css" rel="stylesheet">
+    <link href="ikoner/css/solid.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <title>Hjemmeside</title>
 </head>
 <body>
-    <div>
-        <header>
-        <nav>
-            <form>
-                <label for="search">Søk</label>
+    <div id="grid-container">
+        <header id="global-header">
+            <form id="search-menu">
                 <input type="search" placeholder="Søk her..." id="search">
                 <i class="fa-solid fa-magnifying-glass"></i>
             </form>
+        <nav class="flex-menu">     
                 <ul>
                     <li><a href="index.html">Hjem</a></li>
-                    <li><a href="#produkter">Produkter</a></li>
-                    <li><a href="index.html"><h1>LOGO</h1></a></li>
-                    <li><a href="#kategorier">Kategorier</a></li>
-                    <li><a href="#kontaktoss">Kontakt oss</a></li>
+                    <li><a href="index.html#produkter">Produkter</a></li>
+                    <li><a href="index.html"><h1>Logo</h1></a></li>
+                    <li><a href="index.html#kategorier">Kategorier</a></li>
+                    <li><a href="index.html#kontaktoss">Kontakt oss</a></li>
                 </ul>
+        </nav>        
+            <section id="menu-ikons">   
             <i class="fa-regular fa-user"></i>
             <i class="fa-regular fa-heart"></i>
-            <a href="checkout.html"><i class="fa-solid fa-cart-shopping"></i></a>
-        </nav>
+            <a href="checkout.html" id="shopping-cart"><i class="fa-solid fa-cart-shopping"></i></a>
+            </section>
         </header>
 
         <main>
-            <section>
+            <section id="banner">
                 <h2>or avoids pleasure itself, because it is pleasure, but because</h2>
                 <p>occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it?</p>
                 <a href="#">Les mer</a>
+                
 
             </section>
 
-            <section>
+            <section class="flex-space-b">
                 <h2 id="produkter">Våre mest populære produkter</h2>
                 <p>Oppdag det beste av det beste</p>
 
                 <p> New Product </p> 
                 <p> Special Price </p>
                 <p> Best Sellers </p>
-
-                <article>
+              
+             <section class="product-container"> 
+                <article class="product-card">
                     <img src="img/bil.jpg" alt="Bil">
                     <!--Image by <a href="https://pixabay.com/users/reflex_production-26016661/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7248723">Roman Kogomachenko</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7248723">Pixabay</a>-->
-                    <a href="#">Product name</a>
+                    <a href="product.html">Product name</a>
                     <p>Kr 1999</p>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <p>842 reviews</p>
                 </article>
 
-                <article>
+                <article class="product-card">
                     <img src="img/bil.jpg" alt="Bil">
                     <!--Image by <a href="https://pixabay.com/users/reflex_production-26016661/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7248723">Roman Kogomachenko</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7248723">Pixabay</a>-->
-                    <a href="#">Product name</a>
+                    <a href="product.html">Product name</a>
                     <p>Kr 1999</p>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <p>842 reviews</p>
                 </article>
 
-                <article>
+                <article class="product-card">
                     <img src="img/bil.jpg" alt="Bil">
                     <!--Image by <a href="https://pixabay.com/users/reflex_production-26016661/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7248723">Roman Kogomachenko</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7248723">Pixabay</a>-->
-                    <a href="#">Product name</a>
+                    <a href="product.html">Product name</a>
                     <p>Kr 1999</p>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <p>842 reviews</p>
                 </article>
 
-                <article>
+                <article class="product-card">
                     <img src="img/bil.jpg" alt="Bil">
                     <!--Image by <a href="https://pixabay.com/users/reflex_production-26016661/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7248723">Roman Kogomachenko</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7248723">Pixabay</a>-->
-                    <a href="#">Product name</a>
+                    <a href="product.html">Product name</a>
                     <p>Kr 1999</p>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <p>842 reviews</p>
                 </article>
 
-                <article>
+                <article class="product-card">
                     <img src="img/bil.jpg" alt="Bil">
                     <!--Image by <a href="https://pixabay.com/users/reflex_production-26016661/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7248723">Roman Kogomachenko</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7248723">Pixabay</a>-->
-                    <a href="#">Product name</a>
+                    <a href="product.html">Product name</a>
                     <p>Kr 1999</p>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <p>842 reviews</p>
                 </article>
 
-                <article>
+                <article class="product-card">
                     <img src="img/bil.jpg" alt="Bil">
                     <!--Image by <a href="https://pixabay.com/users/reflex_production-26016661/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7248723">Roman Kogomachenko</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7248723">Pixabay</a>-->
-                    <a href="#">Adas Originals</a>
+                    <a href="product.html">Product name</a>
                     <p>Kr 1999</p>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <p>842 reviews</p>
                 </article>
+             </section> 
             </section>
+            
+            <section id="mansory-grid">
+            <section class="populære-kategorier">
             <h2 id="kategorier">Våre mest populære kategorier</h2>
             <p>ed ut perspiciatis unde omnis iste natus error sit</p>
-                <section>
+            </section>
 
+                <section class="chategory1">
                     <h3>CATEGORY 1</h3>
+                    <!--<img src="img/kategori1.jpg" alt="Indisk Røkelse"-->
+                    <!--https://pixabay.com/photos/incense-indian-aromatic-stick-1961430/-->
                 </section>
-                <section>
+                <section class="chategory2">
                     <h3>CATEGORY 2</h3>
+                    <!--<img src="img/kategori2.jpg" alt="Gull smykker">-->
+                    <!--https://pixabay.com/photos/indian-gold-jewelry-bracelet-3184578/-->
                 </section>
-                <section>
+                <section class="chategory3">
                     <h3>CATEGORY 3</h3>
+                    <!--<img src="img/kategori3.jpg" alt="indisk håndmalig, henna">-->
+                    <!--Image by <a href="https://pixabay.com/users/apertureworks-11640334/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=4004294">Irshad Rahimbux</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=4004294">Pixabay</a>-->
                 </section>
-                <section>
+                <section class="chategory4">
                     <h3>CATEGORY 4</h3>
+                    <!--<img src="img/kategori4.jpg" alt="indisk suverier">-->
+                    <!--Image by <a href="https://pixabay.com/users/rkrandhir-7272677/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=5057452">Randhir Kumar</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=5057452">Pixabay</a>-->
                 </section>
-                <section>
+                <section class="chategory5">
                     <h3>CATEGORY 5</h3>
+                    <!--<img src="img/kategori5.jpg" alt="Mehendi">-->
+                    <!--Image by <a href="https://pixabay.com/users/apertureworks-11640334/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=4004298">Irshad Rahimbux</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=4004298">Pixabay</a>-->
                 </section>
+            </section>    
+                
             <section>
                 <h3>Anmeldelser</h3>
-
-                <article> 
+                <section id="review-boks">
+                <article class="review-card"> 
                     <img src="img/labrador.jpg" alt="Svart labrador">
                     <!--Image by <a href="https://pixabay.com/users/fpv_drones-31998786/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7671355">Dave Boardman</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7671355">Pixabay</a>-->
                     <h3> Rober Labrador </h3>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
                     <p>circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a</p>
                 </article>
 
-                <article> 
+                <article class="review-card"> 
                     <img src="img/labrador.jpg" alt="Svart labrador">
                     <!--Image by <a href="https://pixabay.com/users/fpv_drones-31998786/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7671355">Dave Boardman</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7671355">Pixabay</a>-->
                     <h3> Rober Labrador </h3>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
                     <p>circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a</p>
                 </article>
 
-                <article> 
+                <article class="review-card"> 
                     <img src="img/labrador.jpg" alt="Svart labrador">
                     <!--Image by <a href="https://pixabay.com/users/fpv_drones-31998786/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7671355">Dave Boardman</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7671355">Pixabay</a>-->
                     <h3> Rober Labrador </h3>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
                     <p>circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a</p>
                 </article>
 
-                <article> 
+                <article class="review-card"> 
                     <img src="img/labrador.jpg" alt="Svart labrador">
                     <!--Image by <a href="https://pixabay.com/users/fpv_drones-31998786/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7671355">Dave Boardman</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7671355">Pixabay</a>-->
                     <h3> Rober Labrador </h3>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
                     <p>circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a</p>
                 </article>
+                </section>
             </section>
         </main>
         <footer>
             <section>
-                <a href="index.html"><h3>LOGO</h3></a>
+                <a href="index.html"><h3>Logo</h3></a>
                 <p>consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore</p>
             </section>
 
