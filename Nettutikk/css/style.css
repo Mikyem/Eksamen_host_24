@@ -16,7 +16,7 @@ body{
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: auto;
-        row-gap: 1rem;
+        row-gap: 1rem; /*avstand mellom rader, fikk tips fra https://www.w3schools.com/cssref/css3_pr_row-gap.php*/
         max-width: 600px;
 }
 
@@ -68,18 +68,6 @@ footer{
     gap: 10px;
 }
 
-/*
-h1{font-size: 2rem;}
-h2{font-size: 1.8rem;}
-h3{font-size: 1.6rem;
-margin-top: 10px;
-margin-bottom: 10px;}
-h4{font-size: 1.4rem;}
-p, a{font-size: 1rem;}
-*/
-
-
-
 #global-header{
     display: flex;
     flex-wrap: wrap;
@@ -114,7 +102,6 @@ header{
     color: #000;
 }
 
-
 .flex-menu a{
     text-decoration: none; /* Fjerner understrekning på lenkene  */
     font-size: 1rem;
@@ -135,6 +122,11 @@ header{
     color: #000;
     gap: 10px;
 }
+
+
+
+
+
 #banner{
     grid-column: 2;
     grid-row: 1;
@@ -163,6 +155,8 @@ header{
     color: #000;
     border-radius: 10px;
 }
+
+
 
 
 
@@ -199,8 +193,11 @@ header{
 }
 
 
+
+
+
 .product-container{
-    justify-content: center; /* Sentrerer elementene horisontalt */
+    justify-content: center; 
     padding: 5px;
 }
 .product-container {
@@ -214,12 +211,12 @@ header{
     border-radius: 20px;
     object-fit: cover;
     overflow: hidden;
-    aspect-ratio: 1 / 1;
+    aspect-ratio: 1 / 1; /*bruker dette for å gjøre bildet like langt på begge sider, fikk tips fra https://www.w3schools.com/cssref/css_pr_aspect-ratio.php*/
 }
 .product-card{
-    max-width: 600px; /* Setter maks bredde på produktet på produktkort til 350px */
-    min-width: 200px; /* Setter minimum bredde til 200px */
-    width: 100%; /* Produktkortet tar opp 100% av sin container */
+    max-width: 600px; 
+    min-width: 200px; 
+    width: 100%; 
     padding: 20px;
 }
 .product-card a{
@@ -263,9 +260,11 @@ header{
     max-width: 600px;
     border-radius: 50%;
     object-fit: cover;
-    overflow: hidden; /*skjuler overskytende om det er noe*/
-    aspect-ratio: 1 / 1; /*Sikrer at bredden og høyden er like, hjelper til at jeg skal få en rund og ikke en oval sirkel*/
+    overflow: hidden; 
+    aspect-ratio: 1 / 1; /*bruker dette for å gjøre bildet like langt på begge sider, fikk tips fra https://www.w3schools.com/cssref/css_pr_aspect-ratio.php*/
 }
+
+
 
 
 /*Index Kategorier*/
@@ -297,7 +296,7 @@ header{
         padding: 3rem;
 }
 .chategory1{
-    background-image: url("../img/kategori1.jpg");
+    background-image: url("../img/kategori1.jpg"); /*Bildene er kildeført i html dokumentet*/
     background-size: cover;
     background-position: center;
     text-align: center;
@@ -307,7 +306,7 @@ header{
     color: white;
 }
 .chategory2{
-    background-image: url("../img/kategori2.jpg");
+    background-image: url("../img/kategori2.jpg"); /*Bildene er kildeført i html dokumentet*/
     background-size: cover;
     background-position: center;
     text-align: center;
@@ -317,7 +316,7 @@ header{
     color: white;
 }
 .chategory3{
-    background-image: url("../img/kategori3.jpg");
+    background-image: url("../img/kategori3.jpg"); /*Bildene er kildeført i html dokumentet*/
     background-size: cover;
     background-position: center;
     text-align: center;
@@ -327,7 +326,7 @@ header{
     color: white;
 }
 .chategory4{
-    background-image: url("../img/kategori4.jpg");
+    background-image: url("../img/kategori4.jpg"); /*Bildene er kildeført i html dokumentet*/
     background-size: cover;
     background-position: center;
     text-align: center;
@@ -337,7 +336,7 @@ header{
     color: white;
 }
 .chategory5{
-    background-image: url("../img/kategori5.jpg");
+    background-image: url("../img/kategori5.jpg"); /*Bildene er kildeført i html dokumentet*/
     background-size: cover;
     background-position: center;
     text-align: center;
@@ -362,17 +361,15 @@ footer{
 footer p{
     text-decoration: none;
 }
-/*footer h3{
-    justify-content: space-between;
-    align-items: center; 
-}*/
+
+
 footer{
     padding-left: 8px;
 }
 footer {
-    flex-direction: column; /* Stabler elementene vertikalt */
-    align-items: flex-start; /* Justerer innhold til venstre */
-    gap: 20px; /* Legg til mellomrom mellom boksene */
+    flex-direction: column; 
+    align-items: flex-start; 
+    gap: 20px; 
     width: 100%;
 }
 
@@ -785,6 +782,9 @@ footer a{
 
 
 
+/*Produkt siden*/
+
+
 #brøsmulesti{
     display: flex;
     flex-wrap: nowrap;
@@ -885,7 +885,7 @@ footer a{
 
 .lignende-produkter img{
     width: 100%;
-    aspect-ratio: 1/1;
+    aspect-ratio: 1/1; /*bruker dette for å gjøre bildet like langt på begge sider, fikk tips fra https://www.w3schools.com/cssref/css_pr_aspect-ratio.php*/
     object-fit: cover;
     border-radius: 30px;
     max-width: 600px;
