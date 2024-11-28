@@ -6,6 +6,10 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+body{
+    max-width: 375px;
+}
+
 
 /*grid container 1*/
 #grid-container{
@@ -13,11 +17,16 @@
         grid-template-columns: 1fr;
         grid-template-rows: auto;
         row-gap: 1rem;
-        max-width: 375px;
+        max-width: 600px;
+}
+
+h1{
+    font-size: 36px;
+    padding: 1px 37px 1px 37px;
 }
 
 h3{
-    padding: 32px 10px 15px 10px;
+    padding: 32px 10px 15px 5px;
 }
 
 header{
@@ -31,7 +40,7 @@ header{
 main{
     grid-column: 1;
     grid-row: 2;
-    max-width: 347px;
+    max-width: 600px;
     padding: 1rem;
 }
 
@@ -104,10 +113,7 @@ header{
     text-decoration: none;
     color: #000;
 }
-h1{
-    font-size: 36px;
-    padding: 1px 37px 1px 37px;
-}
+
 
 .flex-menu a{
     text-decoration: none; /* Fjerner understrekning på lenkene  */
@@ -166,19 +172,33 @@ h1{
 #overskrift-produkter h2{
     padding: 1rem 1rem 1rem 1rem;
 }
-#overskrift-produkter p{
-    padding: 1rem 1rem 1rem 1rem;
-}
+
+
 #produkt-knapper{
     display: flex;
     flex-wrap: wrap;
     list-style: none;
-    text-align: center;
+    gap: 17px;
+    padding: 1rem 0;
 }
-#produkt-knapper p{
-    padding: 2px 7px 2px 7px;
-    font-size: 1rem;
+
+.knapp{
+    background-color: #000;
+    color: #ffffff;
+    border-radius: 10px;
+    padding: 11px;
+    font-size: 14px;
 }
+
+.knapper{
+    background-color: #ffffff;
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding: 11px;
+    font-size: 14px;
+}
+
+
 .product-container{
     justify-content: center; /* Sentrerer elementene horisontalt */
     padding: 5px;
@@ -186,19 +206,18 @@ h1{
 .product-container {
     display: grid;
     grid-template-columns: 1fr;
-    max-width: 350px;
-    width: 100%;
+    width: 92%;
 }
 .flex-space-b img{
     width: 112%;
-    max-width: 300px;
+    max-width: 600px;
     border-radius: 20px;
     object-fit: cover;
     overflow: hidden;
     aspect-ratio: 1 / 1;
 }
 .product-card{
-    max-width: 355px; /* Setter maks bredde på produktet på produktkort til 350px */
+    max-width: 600px; /* Setter maks bredde på produktet på produktkort til 350px */
     min-width: 200px; /* Setter minimum bredde til 200px */
     width: 100%; /* Produktkortet tar opp 100% av sin container */
     padding: 20px;
@@ -211,7 +230,7 @@ h1{
 .product-nav-pri{
     display: flex;
     flex-wrap: wrap;
-    gap: 8rem;
+    gap: 107px;
     padding-top: 1rem;
 }
 
@@ -232,7 +251,7 @@ h1{
 }
 .review-card{
     flex: 0 0 auto;
-    max-width: 325px;
+    max-width: 600px;
     min-width: 200px;
     width: 100%;
     border: 1px solid #b6b1b1;
@@ -241,7 +260,7 @@ h1{
 }
 .review-card img{
     width: 100px;
-    max-width: 100px;
+    max-width: 600px;
     border-radius: 50%;
     object-fit: cover;
     overflow: hidden; /*skjuler overskytende om det er noe*/
@@ -249,12 +268,15 @@ h1{
 }
 
 
+/*Index Kategorier*/
+
+
 #mansory-grid{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr ;
     gap: 12px;
-    padding: 40px 5px;
+    padding: 40px 10px;
     text-align: center;
     grid-template-areas:
     "overskrift" 
@@ -331,7 +353,7 @@ h1{
 
 
 
-
+/*Footer*/
 
 footer{
  grid-column: 1;
@@ -406,6 +428,8 @@ footer a{
 
 
 
+
+
 /*checkout*/
 
 #Kasse{
@@ -421,13 +445,13 @@ footer a{
 #shop-container{
     outline: 1px solid #b6b1b1;
     margin-bottom: 1rem;
-    max-width: 349px;
+    max-width: 600px;
 }
 
 #shop-info{
     padding: 10px;
     margin: auto;
-    max-width: 350px;
+    max-width: 600px;
     width: 100%;
 }
 
@@ -507,13 +531,13 @@ footer a{
 #op-container{
     outline: 1px solid #b6b1b1;
   margin-bottom: 1rem;
-  max-width: 349px;
+  max-width: 600px;
 }
 
 #op-info{
     padding: 10px;
   margin: auto;
-  max-width: 350px;
+  max-width: 600px;
   width: 100%;
 }
 
@@ -595,13 +619,13 @@ footer a{
 #lev-container{
     outline: 1px solid #b6b1b1;
     margin-bottom: 1rem;
-    max-width: 349px;
+    max-width: 600px;
 }
 
 #lev-info{
     padding: 10px;
   margin: auto;
-  max-width: 350px;
+  max-width: 600px;
   width: 100%;
 }
 
@@ -642,13 +666,13 @@ footer a{
 #bet-container{
     outline: 1px solid #b6b1b1;
     margin-bottom: 1rem;
-    max-width: 349px;
+    max-width: 600px;
 }
 
 #bet-info{
     padding: 10px;
     margin: auto;
-    max-width: 350px;
+    max-width: 600px;
     width: 100%;
 }
 
@@ -761,7 +785,6 @@ footer a{
 
 
 
-
 #brøsmulesti{
     display: flex;
     flex-wrap: nowrap;
@@ -865,7 +888,7 @@ footer a{
     aspect-ratio: 1/1;
     object-fit: cover;
     border-radius: 30px;
-    max-width: 300px;
+    max-width: 600px;
     margin: auto;
 }
 
@@ -887,3 +910,4 @@ footer a{
     text-decoration: none;
     padding-top: 15px;
 }
+
