@@ -33,24 +33,24 @@
         </header>
 
         <main>
-            <h2>Kasse</h2>
-
-            <section>
-                <h2>1. SHOPPINGBAGEN DIN</h2>
-
-                    <article>
-                        <img src="img/dress427x640.jpg" alt="dress">
+            <h2 id="Kasse">Kasse</h2>
+            <section id="shop-container">
+            <section id="shop-info">  
+                <h2>1. SHOPPINGBAGEN DIN</h2> <!-- #shop-info h2 på css-->
+                    <article class="shop-kurv">
+                        <img src="img/dress427x640.jpg" alt="dress" class="shop-img">
                         <!--Image by <a href="https://pixabay.com/users/shopkundusa-18837907/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7633843">Shopkundusa</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7633843">Pixabay</a>-->
-                        <section>
-                        <a href="product.html"><h2>Produktnavn</h2></a>
-                        <p>Kr 5195</p>
-                        <p>Farge: beige</p>
+                        <section class="shop-boks">
+                        <section class="shop-info-kurv">
+                        <a href="product.html">Produktnavn</a>
+                        <p class="shop-pris">Kr 5195</p>
+                        <p class="shop-farge">Farge: beige</p>
                         </section>
-
-                        <form>
+                        <form>  
+                            <section class="shop-str-antall">
                             <label>
                                 Størrelse 
-                                <select name="size">
+                                <select name="size" class="shop-str">
                                     <option value="xxs">XXS</option>
                                     <option value="XS">XS</option>
                                     <option value="S">S</option>
@@ -62,179 +62,227 @@
                             </label>
                             <label>
                                 Antall
-                                <input type="number" name="number" placeholder="1" max="10" min="1">
+                                <input class="shop-antall" type="number" name="number" placeholder="1" max="10" min="1">
                             </label>
+                            </section>
+                            <section class="shop-ikon">
                             <i class="fa-regular fa-heart"></i>
                             <i class="fa-solid fa-trash"></i>
+                            </section>
                         </form>
+                        </section>    
                     </article>
-
-                    <article>
-                    <a href="product.html"><img src="img/dress427x640.jpg" alt="dress"></a>
-                    <!--Image by <a href="https://pixabay.com/users/shopkundusa-18837907/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7633843">Shopkundusa</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7633843">Pixabay</a>--> 
-
-                    <section>
-                    <h2>Produktnavn</h2>
-                    <p>Kr 5195</p>
-                    <p>Farge: beige</p>
-                    </section>
-
-                    <form>
-                        <label>
-                            Størrelse 
-                            <select name="size">
-                                <option value="xxs">XXS</option>
-                                <option value="XS">XS</option>
-                                <option value="S">S</option>
-                                <option value="M">M</option>
-                                <option value="L">L</option>
-                                <option value="XL">XL</option>
-                                <option value="XXL">XXL</option>
-                            </select>
-                        </label>
-
-                        <label>
-                            Antall
-                            <input type="number" name="nubmer" placeholder="1" max="10" min="1">
-                        </label>
-                        <i class="fa-regular fa-heart"></i>
-                        <i class="fa-solid fa-trash"></i>
+                    <article class="shop-kurv">
+                        <img src="img/dress427x640.jpg" alt="dress" class="shop-img">
+                        <!--Image by <a href="https://pixabay.com/users/shopkundusa-18837907/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7633843">Shopkundusa</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7633843">Pixabay</a>-->
+                        <section class="shop-boks">
+                        <section class="shop-info-kurv">
+                        <a href="product.html">Produktnavn</a>
+                        <p class="shop-pris">Kr 5195</p>
+                        <p class="shop-farge">Farge: beige</p>
+                        </section>
+                        <form>  
+                            <section class="shop-str-antall">
+                            <label>
+                                Størrelse 
+                                <select name="size" class="shop-str">
+                                    <option value="xxs">XXS</option>
+                                    <option value="XS">XS</option>
+                                    <option value="S">S</option>
+                                    <option value="M">M</option>
+                                    <option value="L">L</option>
+                                    <option value="XL">XL</option>
+                                    <option value="XXL">XXL</option>
+                                </select>
+                            </label>
+                            <label>
+                                Antall
+                                <input class="shop-antall" type="number" name="number" placeholder="1" max="10" min="1">
+                            </label>
+                            </section>
+                            <section class="shop-ikon">
+                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-solid fa-trash"></i>
+                            </section>
                     </form>
+                        </section>
                     </article>
+            </section>          
             </section>
 
-            <section>
-                <h2>2. Dine opplysninger</h2>
-                <p>Leveringsadresse</p>
-
+            <section id="op-container">
+            <section id="op-info">
+                <h2>2. DINE OPPLYSNINGER</h2> <!--#op-info h2 på css-->
+                <section class="op-boks">
+                <section class="op-boks1">
+                <p class="op-tittel">Leveringsadresse</p>
                 <form method="post">
+                 <section class="op-navn">
                     <label>
                         Fornavn:
-                        <input type="text" name="navn" placeholder="Navn*" id="navn" maxlength="50" pattern="[A-Za-zæøåÆØÅ ]{2,}" required> 
+                        <input class="boks1" type="text" name="navn" placeholder="Navn*" id="navn" maxlength="50" pattern="[A-Za-zæøåÆØÅ ]{2,}" required> 
                     </label>
                     <label>
                         Etternavn: 
-                        <input type="text" name="etternavn" placeholder="Etternavn*" maxlength="50" pattern="[A-Za-zæøåÆØÅ ]{2,}" required>
+                        <input class="boks1" type="text" name="etternavn" placeholder="Etternavn*" maxlength="50" pattern="[A-Za-zæøåÆØÅ ]{2,}" required>
                     </label>
+                 </section>
                     <label>
                         Gateadresse:
-                        <input type="text" name="Adresse" placeholder="BRA veien 4*" maxlength="100" pattern="[A-Za-zæøåÆØÅ ]{2,}" required>
+                        <input class="boks2" type="text" name="Adresse" placeholder="BRA veien 4*" maxlength="100" pattern="[A-Za-zæøåÆØÅ ]{2,}" required>
                     </label>
+                    <section class="op-post">
                     <label>
                         Postnummer:
-                        <input type="number" name="Postnummer" placeholder="1788" min="1000" max="9999" required> 
+                        <input class="boks1" type="number" name="Postnummer" placeholder="1788" min="1000" max="9999" required> 
                     </label>
-                </form>
-                    
-                <p>Kontaktinformasjon</p>
+                    <label>
+                        Poststed:
+                        <input class="boks1" type="text" name="poststed" placeholder="Halden*" pattern="[A-Za-zæøåÆØÅ ]{2,}" required>
+                    </label>
+                    </section>
+                </form> 
+                <section class="op-boks2">
+                <p class="op-tittel">Kontaktinformasjon</p>
                 <form>
                     <label>
                         Epost:
-                        <input type="email" name="email" placeholder="Eksempel@gmail.com" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required>
+                        <input class="boks2" type="email" name="email" placeholder="Eksempel@gmail.com" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required>
                     </label>
                     <label>
                         Telefon:
-                        <input type="tel" pattern="[0-9]{8,12}" required> 
+                        <input class="boks2" type="tel" pattern="[0-9]{8,12}" required> 
                     </label>
-                    <a href="#">Lagre</a>
-                    <a href="#">Avbryt</a>
+                    <label>
+                        <input type="submit" value="Lagre">
+                    </label>
+                    <a href="#" id="Avbryt">Avbryt</a>
                 </form>
+                </section>
+            </section>
+            </section>
+            </section>
             </section>
 
-            <section>
-                <h2>3.LEVERING</h2>
-                <p>LEVERINGSVALG</p>
-
-                <form>
+            <section id="lev-container">
+            <section id="lev-info">  
+                <h2>3.LEVERING</h2> <!--lev-info h2-->
+                
+                <section id="lev-boks">
+                <p class="lev-valg"><span class="bold">LEVERINGSVALG</span></p>
+                <form class="lev-form">
+                    <section class="lev-box">
                     <label>
                         <input type="radio" name="valg">Express Hjemelevering
                     </label>
-                        <p>59 kr <i class="fa-solid fa-truck-fast"></i></p>
-                        <p>3-4 Virkedager</p>
-                        <p>bestill hverdag før 08:00* for levering neste arbeidsdag. Leveres hjem til deg før frokost mandag til lørdag. *For levering til postnummer 4000-7999 er leveringstiden 2 arbeidsdager, for postnummer 8000-9999 er leveringstiden 3 arbeidsdager.</p>
+                       <section class="lev-ikon">
+                        <p class="lev-59">59 kr <i class="fa-solid fa-truck-fast"></i></p>
+                       </section> 
+                        <p class="lev-virkedager">3-4 Virkedager</p>
+                        <p class="lev-inf">bestill hverdag før 08:00* for levering neste arbeidsdag. Leveres hjem til deg før frokost mandag til lørdag. *For levering til postnummer 4000-7999 er leveringstiden 2 arbeidsdager, for postnummer 8000-9999 er leveringstiden 3 arbeidsdager.</p>
+                    </section>
 
+                    <section class="lev-box">
                     <label>
-                        <input type="radio" name="valg">Ekspress Pakke til
+                        <input type="radio" name="valg">Ekspress pakke til utleveringssted
                     </label>
-                        <p>59 kr <i class="fa-brands fa-dhl"></i></p>
-                        <p>1-3 Virkedager</p>
-                    
+                       <section class="lev-ikon">
+                        <p class="lev-59kr">59 kr <i class="fa-brands fa-dhl"></i></p>
+                       </section>
+                        <p class="lev-virkedager">1-3 Virkedager</p>
+                    </section>
+
+                    <section class="lev-box">
                     <label>
                         <input type="radio" name="valg">Standard Hjemelevering
                     </label>     
-                        <p>Gratis <i class="fa-solid fa-box"></i></p>
-                        <p>5-8 Virkedager</p>
-                        <p>Leveres hjem til deg før frokost mandag til lørdag innen 4-7 hverdager.</p>
+                        <section class="lev-ikon">
+                        <p class="lev-gratis">Gratis <i class="fa-solid fa-box"></i></p>
+                        </section>
+                        <p class="lev-virkedager">5-8 Virkedager</p>
+                        <p class="lev-inf">Leveres hjem til deg før frokost mandag til lørdag innen 4-7 hverdager.</p>
+                    </section>
                 </form>
+                </section>
+            </section>
             </section>
 
-            <section>
-                <h2>4. BETALING</h2>
-                <p>BETAL MED KORT <i class="fa-solid fa-credit-card"></i></p> 
-
-                <label>
+           <section id="bet-container">
+           <section id="bet-info">  
+                <h2>4. BETALING</h2> <!--bet-info h2 på css-->
+              <section id="bet-box">
+                <p id="bet-betal-med">BETAL MED KORT <i class="fa-solid fa-credit-card"></i></p> 
+                 
+                <form id="bet-form">
+                <label class="bet-kontonr">
                     Kortnummer
                     <input type="number" name="kortnummer" placeholder="342342****4435" min="10000000000000" max="99999999999999" required>
                 </label>
 
-                <label>
+                <label class="bet-utl-dato">
                     Utløpsdato 
                     <input type="date" name="Utløpsdato" required>
                 </label>
 
-                <label>
+                <label class="bet-cvc">
                     CVC/CVV
                     <input type="text" name="CVC/CVV" placeholder="CVC/CVV" maxlength="3" required>
                 </label>
 
-                <p>Å betale ink. mva.</p>
-                <h3>1 199kr</h3>
-
+                <p class="bet-mva">Å betale ink. mva.</p>
+                <p class="bet-total">1 199kr</p>
                 <button type="submit">Fullfør kjøp</button>
+                <p class="bet-oplysning">Du bekrefter også herved at opplysningene og dokumentene du har oppgitt er korekte og fullstendige. Leverandøren forbeholder seg retten til å heve eller avslutte avtaleforholdet dersom det foreligger uriktige eller ufullstendige opplysninger.</p>
 
-                <p>Du bekrefter også herved at opplysningene og dokumentene du har oppgitt er korekte og fullstendige. Leverandøren forbeholder seg retten til å heve eller avslutte avtaleforholdet dersom det foreligger uriktige eller ufullstendige opplysninger</p>
-
+                <section class="bet-checkbox">
                 <label>
                     <input type="checkbox" name="nyhetsbrev"> Ja takk! Send nyhetsbrev til meg.
                 </label>
                 <label>
                     <input type="checkbox" name="tilbud"> Jeg ønsker å motta tekstmeldinger med tilbud og nyheter.
                 </label>
+                </section>
+              </form>
+              </section>
+            </section>  
+            </section>
+        </main>
+        <footer>
+            <section id="footer-logo">
+                <a href="index.html"><h3>Logo</h3></a>
+                <p>consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore</p>
+            </section>
+        <section id="footerB">    
+            <section id="footer-kontakt">
+                <h3 id="kontaktoss">KONTAKT</h3>
+                <section id="kontakt-tekst">
+                <p><span class="bold">Adresse:</span> B R A Veien 4, 1757 Halden</p>
+                <p><span class="bold">Telefon:</span> 69 60 80 00</p>
+                <p><span class="bold">E-post:</span> halden@hiof.no</p>
+                <p><span class="bold">Åpningstider:</span> Stenger 15:00</p>
+                </section>
             </section>
 
-        </main>
+            <section id="footer-snarvei">
+                <h3>SNARVEIER</h3>
+                <section id="snarvei">
+                <a href="#">Produkter</a>
+                <a href="#">Kategorier</a>
+                <a href="#">Kontakt oss</a>
+                </section>
+            </section>
 
-    <footer>
-        <section>
-            <a href="index.html"><h3>Logo</h3></a>
-            <p>consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore</p>
-        </section>
-
-        <section>
-            <h3 id="kontaktoss">KONTAKT</h3>
-            <p>Adresse: B R A Veien 4, 1757 Halden</p>
-            <p>Telefon: 69 60 80 00</p>
-            <p>E-post: halden@hiof.no</p>
-            <p>Åpningstider: Stenger 15:00</p>
-        </section>
-
-        <section>
-            <h3>SNARVEIER</h3>
-            <a href="#">Produkter</a>
-            <a href="#">Kategorier</a>
-            <a href="#">Kontakt oss</a>
-        </section>
-
-        <a>Tilgjengelighetserklæringen</a>
-
-        <section>
-            <h3>SOSIALE MEDIER</h3>
-            <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
-            <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
-            <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="https://www.pinterest.com/"><i class="fa-brands fa-pinterest"></i></a>
-        </section>
-        
-    </footer>
+            <section id="footer-sosialem">
+                <h3>SOSIALE MEDIER</h3>
+                <section id="footer-ikon">
+                <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.pinterest.com/"><i class="fa-brands fa-pinterest"></i></a>
+                </section>
+            </section>
+        </section>    
+        </footer>
+    </div>
 </body>
 </html>
